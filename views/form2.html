@@ -1,7 +1,20 @@
 <include href="views/header.html">
 <body>
 <div class="container main">
-    <h1>What's for lunch?</h1>
+    <form action="summary" method="post">
+        <h1>Food Order</h1>
+        <label>
+            <input type="radio" name="meal" value="breakfast"> Breakfast
+        </label><br>
+        <label>
+            <input type="radio" name="meal" value="lunch"> Lunch
+        </label><br>
+        <label>
+            <input type="radio" name="meal" value="dinner"> Dinner
+        </label><br>
+
+        <button type="submit" class="btn btn-primary">Order</button>
+    </form>
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

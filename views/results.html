@@ -1,7 +1,10 @@
 <include href="views/header.html">
 <body>
 <div class="container main">
-    <h1>What's for lunch?</h1>
+    <form action="summary" method="post">
+        <h1>Thank you for your order!</h1>
+        <h2>You ordered {{ @SESSION.food }} for {{ @SESSION.meal }}</h2>
+    </form>
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
